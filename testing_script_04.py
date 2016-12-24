@@ -141,7 +141,6 @@ def num_57():
     #return a, b, c, d, e
     
 #----------------------------------------------------------------------
-# num_58
 def num_58():
     """(num_58)... arrays from uneven lists
     :
@@ -151,14 +150,21 @@ def num_58():
     frmt = """
     :------------------------------------------------------------------
     {}
+    :Input list...
+    {}
+    :Output array
+    {!r:}
+    {}
     :------------------------------------------------------------------
     """
     import itertools
     null = np.nan
     a = [[1, 10, 100, 1000], [2, 20], [3, 30, 300]]
     b = np.array(list(itertools.zip_longest(*a, fillvalue=null))).T
-    args = [num_58.__doc__]    
+    args = [num_58.__doc__, a, b, b.dtype]
+    print(dedent(frmt).format(*args))    
     #return a, b
+
 
 #----------------------------------------------------------------------
 # num_59

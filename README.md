@@ -45,4 +45,27 @@ Very short testing defs for a variety of purposes
 ...... **matplotlib** ......  
 :    mpl_01()  Plotting and interpolating  
 :    mpl_02()  Construct rectangular geometries  
+  
+  **Testing_script_02**  
 
+:...... **np functions** .....  
+:    num_25()  Numpy typecheck for array data types  
+:    num_26()  masks, nan and data outputs  
+:    num_27()  list files in folder  
+:    num_28()  place random values/nan in arrays  
+:    num_29()  remove string entities using LC's  
+:    num_30()  encoding and decoding in python  
+:    num_31()  masked_array formatting  
+:    num_32()  2D array to XYZ  
+:    num_33()  nested formatting demos  
+:    num_34()  Structured arrays  
+:    num_35()  math on structured arrays  
+:    num_36()  char and recarray construction  
+:    num_37()  playing with 3D arrangements...  
+:    num_38()  combinations in data  
+:    num_39()  recfunctions join  
+:  
+:  **Testing_script_03**  
+
+ 
+  

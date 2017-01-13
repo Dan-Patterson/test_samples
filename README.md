@@ -85,7 +85,26 @@ Very short testing defs for a variety of purposes
 :    num_55()  combinations and frequency  
   
 **Testing_script_04**  
-
+  
+:    num_56()  Geometric mean calculation  
+:    num_57()  transposing and reshaping arrays  
+:    num_58()  arrays from uneven lists  
+:    num_59()  advanced slicing  
+:    num_60()  subtraction between arrays and transposed arrays  
+:    num_61()  Unravel indices  
+:    num_62()  Products of various kinds  
+:    num_63()  quick length/distance demo using row norms from scipy  
+:    num_64()  mixing dtypes in arrays  
+:    num_65()  index array and booleans  
+:    num_66()  savetxt example...  
+:    num_67()  datetime operations  
+:    num_68()  local minima demo  
+:    num_69()  as_strided useage  
+:    num_70()  unique on recarrays  
+  
+**Testing_script_05**
+  
+:  
 
  
   

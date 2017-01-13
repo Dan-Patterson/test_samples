@@ -4,17 +4,17 @@ Very short testing defs for a variety of purposes
 :Table of contents  
 :  
   
-** Testing_Script_01 **  
+**Testing_Script_01**  
 :Arrays....  
   
-:......  construction .....  
+:......  **construction** .....  
 :    num_01()  Array creation using vstack, zip and array filling  
 :    num_02()  Using np.linspace with floats instead of np.arange  
 :    num_03()  sparse array  
 :    num_04()  Sub-dtypes in numpy and array formulation  
 :    num_05()  recarray access in numpy  
   
-:......  altering ......  
+:......  **altering** ......  
 :    num_06()  Changing array types via rounding etc  
 :    num_07()  Flatten an array  
 :    num_08()  Array size information  
@@ -25,7 +25,7 @@ Very short testing defs for a variety of purposes
 :    num_13()  Sorting an array revisited (see # 12)  
 :    num_14()  Array padding example  
   
-:......  working with array data ......  
+:......  **working with array data** ......  
 :    num_15()  Subtracting an array mean and the array  
 :    num_16()  Unique values for 1D and 2D arrays  
 :    num_17()  Striding arrays demo  
@@ -37,12 +37,12 @@ Very short testing defs for a variety of purposes
 :    num_23()  Block statistics  
 :    num_24()  Concatenate arrays  
 :  
-:...... python ......  
+:...... **python** ......  
 :    py_01()   List comprehension formats  
 :    py_02()   List comprehensions alternate outputs  
 :    py_03()   formatting output with textwrap  
 :  
-...... matplotlib ......  
+...... **matplotlib** ......  
 :    mpl_01()  Plotting and interpolating  
 :    mpl_02()  Construct rectangular geometries  
 

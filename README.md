@@ -65,7 +65,27 @@ Very short testing defs for a variety of purposes
 :    num_38()  combinations in data  
 :    num_39()  recfunctions join  
 :  
-:  **Testing_script_03**  
+  **Testing_script_03**  
+  
+:...... **np functions** .....  
+:    num_40()  np.genfromtext example  
+:    num_41()  Documenting code using inspect  
+:    num_42()  list files in folder  
+:    num_43()  Blocking an array   
+:    num_44()  a variant on array_split  
+:    num_45()  bulk create structured array fields  
+:    num_46()  Masked array from ill-formed list  
+:    num_47()  Block with padding and reshaping  
+:    num_48()  Formatting again, using indent and dedent  
+:    num_49()  kroneker product and array construction  
+:    num_50()  fancy indexing ....  
+:    num_52()  Closeness Manahatten  
+:    num_53()  formatting output  
+:    num_54()  Producing uniform distribution data  
+:    num_55()  combinations and frequency  
+  
+**Testing_script_04**  
+
 
  
   

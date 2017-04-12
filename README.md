@@ -112,10 +112,8 @@ Very short testing defs for a variety of purposes
 :    num_72()  # logical_or and range checking
 :    num_73()  # slicing in structured arrays by condition
 :    num_74()  # Load *.npy files
-
 :    num_75()  # make random3darrays wth a predetermined shape
 :    num_76()  # produce row/column indices from triu
-
 :    num_77()  # 2.7 indent function
 :    num_78()  # logical_or, condition checking
 :    num_79()  # bad floating point comparisons

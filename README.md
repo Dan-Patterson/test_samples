@@ -73,6 +73,7 @@ Very short testing defs for a variety of purposes
 :    num_41()  Documenting code using inspect  
 :    num_42()  list files in folder  
 \:    num_43()  Blocking an array   
+
 :    num_44()  a variant on array_split  
 :    num_45()  bulk create structured array fields  
 :    num_46()  Masked array from ill-formed list  
@@ -111,8 +112,10 @@ Very short testing defs for a variety of purposes
 :    num_72()  # logical_or and range checking
 :    num_73()  # slicing in structured arrays by condition
 :    num_74()  # Load *.npy files
+
 :    num_75()  # make random3darrays wth a predetermined shape
 :    num_76()  # produce row/column indices from triu
+
 :    num_77()  # 2.7 indent function
 :    num_78()  # logical_or, condition checking
 :    num_79()  # bad floating point comparisons

@@ -107,38 +107,18 @@ Very short testing defs for a variety of purposes
 :...... np functions .....
 
 :    num_71()  # slicing and remainders
-
 :    num_72()  # logical_or and range checking
-
 :    num_73()  # slicing in structured arrays by condition
-
 :    num_74()  # Load *.npy files
-
 :    num_75()  # make random3darrays wth a predetermined shape
-
 :    num_76()  # produce row/column indices from triu
-
 :    num_77()  # 2.7 indent function
-
 :    num_78()  # logical_or, condition checking
-
 :    num_79()  # bad floating point comparisons
-
 :    num_80()  # using r_ and c_ for rapid indexing and array construction
-
 :    num_81()  # sorting arrays by column, revisited
-
 :    num_82()  # line indentation options
-
 :    num_83()  # PIL testing
-
 :    num_84()  # mandelbrot demo
-
 :    num_85()  # circle search
-
 :    num_86()  # standardize by rows or columns
-
-
-
- 
-  

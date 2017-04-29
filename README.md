@@ -113,6 +113,7 @@ Very short testing defs for a variety of purposes
 
 :    num_72()  # logical_or and range checking
 
+
 :    num_73()  # slicing in structured arrays by condition
 
 :    num_74()  # Load *.npy files
@@ -142,6 +143,7 @@ Very short testing defs for a variety of purposes
 :    num_86()  # standardize by rows or columns
 :
 ** Testing_script_06**
+
 :    num_86()  # standardize by rows or columns
 
 :    num_87()  # Unique in 3d array
@@ -167,5 +169,7 @@ Very short testing defs for a variety of purposes
 :    num_97()  # running 2d maximum
 
 :    num_98()  # Decimal minute to decimal degree convertor
+
 :    num_99()  # Decimal, minutes, seconds to decimal degree convertor
+
 :    num_100()  # degrees, min, sec in separate fields to decimal degrees

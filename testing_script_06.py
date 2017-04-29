@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 """
-:Script:   my_new_scripts.py
+:Script:   testing_script_06.py
 :Author:   Dan.Patterson@carleton.ca
 :Modified: 2017-03-12
 :
@@ -12,16 +12,17 @@
 :    num_87()  # Unique in 3d array
 :    num_88()  # nested recarrays
 :    num_89()  # reshape array to row format
-:    num_90()  #
-:    num_91()  #
-:    num_92()  #
-:    num_93()  #
-:    num_94()  #
-:    num_95()  #
-:    num_96()  #
-:    num_97()  #
-:    num_98()  #
-:    num_99()
+:    num_90()  # sorting two dimensional arrays, lexsort etc
+:    num_91()  # smallest 'x' values in 2D numpy array
+:    num_92()  # gray scale image from rgb
+:    num_93()  # convolve 2d array a with kernel
+:    num_94()  # many plots on screen
+:    num_95()  # working with dates
+:    num_96()  # n smallest in column in sorted order
+:    num_97()  # running 2d maximum
+:    num_98()  # Decimal minute to decimal degree convertor
+:    num_99()  # Decimal, minutes, seconds to decimal degree convertor
+:    num_100()  # degrees, min, sec in separate fields to decimal degrees
 :Notes:
 :
 :References
@@ -318,6 +319,7 @@ d0.astype('float')
     {}
     :---------------------------------------------------------------------:
     """
+
     def _d_dist(a):
         """2D array pairwise distance.  no error checking"""
         r, c = a.shape
@@ -327,7 +329,7 @@ d0.astype('float')
                 d[i, j] = np.sqrt(sum((a[i, :] - a[j, :])**2))
                 # d[i,j] = np.linalg.norm(a[i, :] - a[j, :])
         return d
-    #
+
     def _e_dist(a):
         """see e_dist in ein_geom.py"""
         b = a.reshape(np.prod(a.shape[:-1]), 1, a.shape[-1])
@@ -405,7 +407,7 @@ def num_92():
     :       -an-rgb-image-into-grayscale-in-python
     : https://en.m.wikipedia.org/wiki/Grayscale#Converting_color_to_grayscale
     : see https://en.m.wikipedia.org/wiki/HSL_and_HSV
-    """
+x    """
     frmt = """
     :---------------------------------------------------------------------:
     {}
@@ -419,12 +421,12 @@ def num_92():
     gray = np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])
     plt.imshow(gray, cmap=plt.get_cmap('gray'))
     plt.show()
-    args = [_demo.__doc__]
+    args = [num_92.__doc__]
     print(dedent(frmt).format(*args))
 
 
 # ----------------------------------------------------------------------
-# num_93
+# num_93  convolve 2d array a with kernel
 def num_93():
     """
     convolve 2d array a with kernel
@@ -497,15 +499,15 @@ def num_95():
         for d in range(1, d_max + 1):  # by day
             ymd = datetime.datetime(yr, m, d)
             cal.append(ymd)
-        # print("date {} days in month {}".format(base, max_days))
+        # print("date {} days in month {}".format(base, d_max))
     frmt = """
     :---------------------------------------------------------------------:
     {}
     :---------------------------------------------------------------------:
     """
-    args = [num_95.__doc__]
+    # args = [num_95.__doc__, cal]
     # print(dedent(frmt).format(*args))
-    return cal
+    # return cal
 
 
 # ----------------------------------------------------------------------
@@ -523,16 +525,16 @@ def num_96():
                   [17, 8, 9, 5, 7, 0]])
     num = 3
     idx = np.argpartition(a, range(num), axis=1)[:, :num]
-    out = a[np.arange(idx.shape[0])[:,None], idx]
+    out = a[np.arange(idx.shape[0])[:, None], idx]
     frmt = """
     :---------------------------------------------------------------------:
     {}
     :Input array...
-    : {} smallest by column for array
+    : ({}) smallest by column for array....
     {}
-    :Indices......
+    :Indices of smallest....
     {}
-    :Result
+    :Result....
     {}
     :---------------------------------------------------------------------:
     """
@@ -541,58 +543,98 @@ def num_96():
 
 
 # ----------------------------------------------------------------------
-# num_97
+# num_97 running 2d maximum
 def num_97():
+    """Calculate the running 2D maximum in a list of point objects
     """
-    """
+    a = np.random.randint(1, 10, size=(10, 2))
+    a_max = np.amax(a, axis=0, keepdims=True)
     frmt = """
     :---------------------------------------------------------------------:
     {}
+    :Array (transposed)...
+    {}
+    :Max
+    {}
     :---------------------------------------------------------------------:
     """
-    args = [num_97.__doc__]
+    args = [num_98.__doc__, a, a_max]
     print(dedent(frmt).format(*args))
+    return a, a_max
 
 
 # ----------------------------------------------------------------------
-# num_98
+# num_98 Decimal minute to decimal degree convertor
 def num_98():
-    """
-    """
+    """Degrees decimal minutes to D.dddd format converter"""
+    def ddm_ddd(a, sep=" "):
+        """ convert decimal minute string to decimal degrees
+        : a - degree, decimal minute string
+        : sep - usually a space, but check
+        """
+        d, m = [abs(float(i)) for i in a.split(sep)]
+        sign = [-1, 1][d > 0]
+        dd = sign*(d + m/60.)
+        return dd
+    a = '-75 30.5'
+    val = ddm_ddd(a)
     frmt = """
     :---------------------------------------------------------------------:
-    {}
+    :{}
+    :DMS: {} ....  D.dddd: {: 12.8f}
     :---------------------------------------------------------------------:
     """
-    args = [num_98.__doc__]
+    args = [num_98.__doc__, a, val]
     print(dedent(frmt).format(*args))
 
 
 # ----------------------------------------------------------------------
-# num_99
+# num_99 Decimal, minutes, seconds to decimal degree convertor
 def num_99():
-    """
-    """
+    """DMS to D.dddd format converter"""
+    def dms_ddd(a, sep=" "):
+        """ convert decimal, minutes, seconds string to decimal degrees
+        : a - degree, decimal minute second string
+        : sep - usually a space, but check
+        """
+        d, m, s = [abs(float(i)) for i in a.split(sep)]
+        sign = [-1, 1][d > 0]
+        dd = sign*(d + (m + s/60.)/60.)
+        return dd
+    a = '-75 30 30.0'
+    val = dms_ddd(a)
     frmt = """
     :---------------------------------------------------------------------:
-    {}
+    :{}
+    :DMS: {} ....  D.dddd: {: 12.8f}
     :---------------------------------------------------------------------:
     """
-    args = [num_99.__doc__]
+    args = [num_99.__doc__, a, val]
     print(dedent(frmt).format(*args))
 
 
 # ----------------------------------------------------------------------
-# num_100
+# num_100 degrees, min, sec in separate fields to decimal degrees
 def num_100():
+    """degrees, min, sec in separate fields to decimal degrees
     """
-    """
+    def dms_decd(d, m, s):
+        """ convert decimal, minutes, seconds string to decimal degrees
+        : d, m, s - degree, min, sec in separate fields
+        : sep - usually a space, but check
+        """
+        sign = [-1, 1][d > 0]
+        dd = sign*(d + (m + s/60.)/60.)
+        return dd
+    d, m, s = [45, 30, 30]
+    dd = dms_decd(d, m, s)
     frmt = """
     :---------------------------------------------------------------------:
     {}
+    dms {} {}' {}" => d.ddd {}
     :---------------------------------------------------------------------:
     """
-    args = [num_100.__doc__]
+    args = [num_100.__doc__, d, m, s, dd]
     print(dedent(frmt).format(*args))
 
 
@@ -604,18 +646,14 @@ if __name__ == "__main__":
 #    num_87()  # Unique in 3d array
 #    a, a0, a1 = num_88()  # nested recarrays
 #    a, b = num_89()  # reshape arrays to row format
-#    a, d0, d1 = num_90()
-#    num_91()
-#    num_92()
-#    num_93()
-#    num_94()
-#    cal = num_95()
-    num_96()  # n smallest in column in sorted order
-"""
-a = list('!!!feirg ...uoy taeb redyR DNA ardnaiD !!!yllanif')
-arr = np.array(a).reshape(7, 7)
-answer = arr.flatten()[::-1]
-aa = "".join([i for i in answer])
-print(aa)
-#print("{}".format('uoy knahT'[::-1]))
-"""
+#    a, d0, d1 = num_90()  # sorting two dimensional arrays, lexsort etc
+#    num_91()  # smallest 'x' values in 2D numpy array
+#    num_92()  # gray scale image from rgb
+#    num_93()  # convolve 2d array a with kernel
+#    num_94()  # many plots on screen
+#    cal = num_95()  # working with dates
+#    num_96()  # n smallest in column in sorted order
+#    a, a_max = num_97()  # running 2d maximum
+#    num_98()  # deg decimal min to d.ddd conversion
+#    num_99()  # degree, minute, second to d.ddd conversion
+    num_100()  # degrees, min, sec in separate fields to decimal degrees

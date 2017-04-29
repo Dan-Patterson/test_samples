@@ -74,10 +74,11 @@ Very short testing defs for a variety of purposes
 :
 :    num_41()  Documenting code using inspect  
 :    num_42()  list files in folder  
-\:    num_43()  Blocking an array   
+:    num_43()  Blocking an array   
 
 :    num_44()  a variant on array_split  
-:    num_45()  bulk create structured array fields  :    num_46()  Masked array from ill-formed list  
+:    num_45()  bulk create structured array fields  
+:    num_46()  Masked array from ill-formed list  
 :    num_47()  Block with padding and reshaping  
 :    num_48()  Formatting again, using indent and dedent  
 :    num_49()  kroneker product and array construction  
@@ -100,6 +101,7 @@ Very short testing defs for a variety of purposes
 :    num_64()  mixing dtypes in arrays  
 :    num_65()  index array and booleans  
 :    num_66()  savetxt example...  
+
 :    num_67()  datetime operations  
 :    num_68()  local minima demo  
 :    num_69()  as_strided useage  
@@ -142,6 +144,7 @@ Very short testing defs for a variety of purposes
 
 :    num_86()  # standardize by rows or columns
 :
+
 ** Testing_script_06**
 
 :    num_86()  # standardize by rows or columns

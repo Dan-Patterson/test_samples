@@ -71,13 +71,13 @@ Very short testing defs for a variety of purposes
   
 :...... **np functions** .....  
 :    num_40()  np.genfromtext example  
+:
 :    num_41()  Documenting code using inspect  
 :    num_42()  list files in folder  
 \:    num_43()  Blocking an array   
 
 :    num_44()  a variant on array_split  
-:    num_45()  bulk create structured array fields  
-:    num_46()  Masked array from ill-formed list  
+:    num_45()  bulk create structured array fields  :    num_46()  Masked array from ill-formed list  
 :    num_47()  Block with padding and reshaping  
 :    num_48()  Formatting again, using indent and dedent  
 :    num_49()  kroneker product and array construction  
@@ -140,3 +140,32 @@ Very short testing defs for a variety of purposes
 :    num_85()  # circle search
 
 :    num_86()  # standardize by rows or columns
+:
+** Testing_script_06**
+:    num_86()  # standardize by rows or columns
+
+:    num_87()  # Unique in 3d array
+
+:    num_88()  # nested recarrays
+
+:    num_89()  # reshape array to row format
+
+:    num_90()  # sorting two dimensional arrays, lexsort etc
+
+:    num_91()  # smallest 'x' values in 2D numpy array
+
+:    num_92()  # gray scale image from rgb
+
+:    num_93()  # convolve 2d array a with kernel
+
+:    num_94()  # many plots on screen
+
+:    num_95()  # working with dates
+
+:    num_96()  # n smallest in column in sorted order
+
+:    num_97()  # running 2d maximum
+
+:    num_98()  # Decimal minute to decimal degree convertor
+:    num_99()  # Decimal, minutes, seconds to decimal degree convertor
+:    num_100()  # degrees, min, sec in separate fields to decimal degrees

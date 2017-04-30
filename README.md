@@ -68,14 +68,12 @@ Very short testing defs for a variety of purposes
 :  
   **Testing_script_03**  
 
-  
 :...... **np functions** .....  
 :    num_40()  np.genfromtext example  
 :
 :    num_41()  Documenting code using inspect  
 :    num_42()  list files in folder  
 :    num_43()  Blocking an array   
-
 :    num_44()  a variant on array_split  
 :    num_45()  bulk create structured array fields  
 :    num_46()  Masked array from ill-formed list  
@@ -101,7 +99,6 @@ Very short testing defs for a variety of purposes
 :    num_64()  mixing dtypes in arrays  
 :    num_65()  index array and booleans  
 :    num_66()  savetxt example...  
-
 :    num_67()  datetime operations  
 :    num_68()  local minima demo  
 :    num_69()  as_strided useage  
@@ -109,70 +106,40 @@ Very short testing defs for a variety of purposes
   
 **Testing_script_05**
   
-:...... np functions .....
+:...... np functions .....  
 
-:    num_71()  # slicing and remainders
-
-:    num_72()  # logical_or and range checking
-
-
-:    num_73()  # slicing in structured arrays by condition
-
-:    num_74()  # Load *.npy files
-
-:    num_75()  # make random3darrays wth a predetermined shape
-
-:    num_76()  # produce row/column indices from triu
-
-:    num_77()  # 2.7 indent function
-
-:    num_78()  # logical_or, condition checking
-
-:    num_79()  # bad floating point comparisons
-
-:    num_80()  # using r_ and c_ for rapid indexing and array construction
-
-:    num_81()  # sorting arrays by column, revisited
-
-:    num_82()  # line indentation options
-
-:    num_83()  # PIL testing
-
-:    num_84()  # mandelbrot demo
-
-:    num_85()  # circle search
-
+:    num_71()  # slicing and remainders  
+:    num_72()  # logical_or and range checking  
+:    num_73()  # slicing in structured arrays by condition  
+:    num_74()  # Load *.npy files  
+:    num_75()  # make random3darrays wth a predetermined shape  
+:    num_76()  # produce row/column indices from triu  
+:    num_77()  # 2.7 indent function  
+:    num_78()  # logical_or, condition checking  
+:    num_79()  # bad floating point comparisons  
+:    num_80()  # using r_ and c_ for rapid indexing and array construction  
+:    num_81()  # sorting arrays by column, revisited  
+:    num_82()  # line indentation options  
+:    num_83()  # PIL testing  
+:    num_84()  # mandelbrot demo  
+:    num_85()  # circle search  
 :    num_86()  # standardize by rows or columns
-:
+
 
 ** Testing_script_06**
 
-:    num_86()  # standardize by rows or columns
-
-:    num_87()  # Unique in 3d array
-
-:    num_88()  # nested recarrays
-
-:    num_89()  # reshape array to row format
-
-:    num_90()  # sorting two dimensional arrays, lexsort etc
-
-:    num_91()  # smallest 'x' values in 2D numpy array
-
-:    num_92()  # gray scale image from rgb
-
-:    num_93()  # convolve 2d array a with kernel
-
-:    num_94()  # many plots on screen
-
-:    num_95()  # working with dates
-
-:    num_96()  # n smallest in column in sorted order
-
-:    num_97()  # running 2d maximum
-
-:    num_98()  # Decimal minute to decimal degree convertor
-
-:    num_99()  # Decimal, minutes, seconds to decimal degree convertor
-
+:    num_86()  # standardize by rows or columns  
+:    num_87()  # Unique in 3d array  
+:    num_88()  # nested recarrays  
+:    num_89()  # reshape array to row format  
+:    num_90()  # sorting two dimensional arrays, lexsort etc  
+:    num_91()  # smallest 'x' values in 2D numpy array  
+:    num_92()  # gray scale image from rgb  
+:    num_93()  # convolve 2d array a with kernel  
+:    num_94()  # many plots on screen  
+:    num_95()  # working with dates  
+:    num_96()  # n smallest in column in sorted order  
+:    num_97()  # running 2d maximum  
+:    num_98()  # Decimal minute to decimal degree convertor 
+:    num_99()  # Decimal, minutes, seconds to decimal degree convertor  
 :    num_100()  # degrees, min, sec in separate fields to decimal degrees

@@ -140,6 +140,6 @@ Very short testing defs for a variety of purposes
 :    num_95()  # working with dates  
 :    num_96()  # n smallest in column in sorted order  
 :    num_97()  # running 2d maximum  
-:    num_98()  # Decimal minute to decimal degree convertor 
+:    num_98()  # Decimal minute to decimal degree convertor  
 :    num_99()  # Decimal, minutes, seconds to decimal degree convertor  
 :    num_100()  # degrees, min, sec in separate fields to decimal degrees

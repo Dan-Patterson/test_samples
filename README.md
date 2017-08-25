@@ -1,4 +1,4 @@
-# test_samples
+## Test_samples
 Very short testing defs for a variety of purposes
 
 :Table of contents  
@@ -126,7 +126,7 @@ Very short testing defs for a variety of purposes
 :    num_86()  # standardize by rows or columns
 
 
-** Testing_script_06**
+**Testing_script_06**
 
 :    num_86()  # standardize by rows or columns  
 :    num_87()  # Unique in 3d array  
@@ -143,3 +143,52 @@ Very short testing defs for a variety of purposes
 :    num_98()  # Decimal minute to decimal degree convertor  
 :    num_99()  # Decimal, minutes, seconds to decimal degree convertor  
 :    num_100()  # degrees, min, sec in separate fields to decimal degrees
+
+**Testing_script_07**
+
+:    num_101()  # sum product, einsum by axis
+
+:    num_102()  # Structured to ndarray demo
+
+:    num_103()  # sample plot
+
+:    num_104()  # fancy slicing
+
+:    num_105()  # distance calculation, with large arrays
+
+:    num_106()  # reset counter demo
+
+:    num_107()  # 2D argmax use
+
+:    num_108()  # voxel in matplot lib... not available yet
+
+:    num_109()  # raster band math demo
+
+:    num_110()  # Where or where is....
+
+
+**Testing_script_08**
+
+:    num_111()  # create distance matrix as feature class
+
+:    num_112()  # os.path information
+
+:    num_113()  # sequential counts for attributes
+
+:    num_114()  # heat map by sampling and bucketing
+
+:    num_115()  #
+
+:    num_116()  # form array patterns
+
+:    num_117()  # Using a searchcursor in the field calculator
+
+:    num_118()  # using random.mrand.RandomState
+
+:    num_119()  # Equation of a plane through 3 points
+
+:    num_120()  #
+
+
+
+

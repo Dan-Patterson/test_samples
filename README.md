@@ -106,7 +106,7 @@ Very short testing defs for a variety of purposes
   
 **Testing_script_05**
   
-:...... np functions .....  
+  :...... np functions .....  
 
 :    num_71()  # slicing and remainders  
 :    num_72()  # logical_or and range checking  
@@ -129,10 +129,9 @@ Very short testing defs for a variety of purposes
 
 **Testing_script_06**
 
-:    num_86()  # standardize by rows or columns
-
-:    num_87()  # Unique in 3d array 
-:    num_88()  # nested recarrays  
+:    num_86()  # standardize by rows or columns  
+:    num_87()  # Unique in 3d array    
+:    num_88()  # nested recarrays    
 :    num_89()  # reshape array to row format  
 :    num_90()  # sorting two dimensional arrays, lexsort etc  
 :    num_91()  # smallest 'x' values in 2D numpy array  
@@ -148,27 +147,27 @@ Very short testing defs for a variety of purposes
 
 **Testing_script_07**
 
-:    num_101()  # sum product, einsum by axis
-:    num_102()  # Structured to ndarray dems
-:    num_103()  # sample plot
-:    num_104()  # fancy slicing
-:    num_105()  # distance calculation, with large arraya
-:    num_106()  # reset counter demo
-:    num_107()  # 2D argmax use
-:    num_108()  # voxel in matplot lib... not available yet
-:    num_109()  # raster band math demo
-:    num_110()  # Where or where is....
+:    num_101()  # sum product, einsum by axis  
+:    num_102()  # Structured to ndarray dems  
+:    num_103()  # sample plot  
+:    num_104()  # fancy slicing  
+:    num_105()  # distance calculation, with large arrays  
+:    num_106()  # reset counter demo  
+:    num_107()  # 2D argmax use  
+:    num_108()  # voxel in matplot lib... not available yet  
+:    num_109()  # raster band math demo  
+:    num_110()  # Where or where is....  
 
 
 **Testing_script_08**
 
-:    num_111()  # create distance matrix as feature class
-:    num_112()  # os.path information
-:    num_113()  # sequential counts for attributes
-:    num_114()  # heat map by sampling and bucketing
-:    num_115()  #
-:    num_116()  # form array patterns
-:    num_117()  # Using a searchcursor in the field calculator
-:    num_118()  # using random.mrand.RandomState
-:    num_119()  # Equation of a plane through 3 points
-:    num_120()  #
+:    num_111()  # create distance matrix as feature class  
+:    num_112()  # os.path information  
+:    num_113()  # sequential counts for attributes  
+:    num_114()  # heat map by sampling and bucketing  
+:    num_115()  #  
+:    num_116()  # form array patterns  
+:    num_117()  # Using a searchcursor in the field calculator  
+:    num_118()  # using random.mrand.RandomState  
+:    num_119()  # Equation of a plane through 3 points  
+:    num_120()  #  

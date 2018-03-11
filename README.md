@@ -117,6 +117,7 @@ Very short testing defs for a variety of purposes
 :    num_77()  # 2.7 indent function  
 :    num_78()  # logical_or, condition checking  
 :    num_79()  # bad floating point comparisons  
+
 :    num_80()  # using r_ and c_ for rapid indexing and array construction  
 :    num_81()  # sorting arrays by column, revisited  
 :    num_82()  # line indentation options  
@@ -128,8 +129,9 @@ Very short testing defs for a variety of purposes
 
 **Testing_script_06**
 
-:    num_86()  # standardize by rows or columns  
-:    num_87()  # Unique in 3d array  
+:    num_86()  # standardize by rows or columns
+
+:    num_87()  # Unique in 3d array 
 :    num_88()  # nested recarrays  
 :    num_89()  # reshape array to row format  
 :    num_90()  # sorting two dimensional arrays, lexsort etc  

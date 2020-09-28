@@ -333,11 +333,8 @@ def num_110():
     :
     :winreg.QueryValueEx options
     :  ProductName, PythonCondaEnv, PythonCondaRoot
-    :- Computer\HKEY_CURRENT_USER\Software\ESRI\Desktop10.5\ArcToolbox\Settings
-    :   contains ScriptDebugger, ScriptEditor
-    :- Computer\HKEY_CURRENT_USER\Software\ESRI\Desktop10.5\ArcMap
     :- WOW6432Node info contains ESRI
-    :- Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ESRI\ArcGIS
+    :- Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Esri\ArcGIS
     """
     import arcpy
     import inspect
@@ -348,20 +345,16 @@ def num_110():
     a0 = inspect.getabsfile(arcpy)  # __init__ location for arcpy
     a1 = sys.prefix
     a2 = os.path.abspath(os.path.join(a1, '..', '..', '..'))  # ArcGIS Pro pth
-    where_Pro = r"SOFTWARE\ESRI\ArcGISPro"
+    where_Pro = r"SOFTWARE\Esri\ArcGISPro"
     with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, where_Pro) as key:
         a3 = winreg.QueryValueEx(key, "InstallDir")[0]
-    where_Map = r"SOFTWARE\WOW6432Node\ESRI\ArcGIS"
-    with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, where_Map) as key:
-        a4 = winreg.QueryValueEx(key, "InstallDir")[0]
     frmt = """
     :ArcPy path ....... {}
     :sys.prefix ....... {}
     :ArcGIS Pro path .. {}
     :Pro winreg path .. {}
-    :Map winreg path .. {}
     """
-    print(dedent(frmt).format(a0, a1, a2, a3, a4))
+    print(dedent(frmt).format(a0, a1, a2, a3))
 
 
 # ----------------------------------------------------------------------

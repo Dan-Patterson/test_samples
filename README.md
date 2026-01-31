@@ -1,8 +1,7 @@
 ## Test_samples
 Very short testing defs for a variety of purposes
 
-:Table of contents  
-:  
+:Note... in Markdown end each line with 2 spaces or a backslash.  This .md uses 2 spaces for force a newline.
   
 **Testing_Script_01**  
 :Arrays....  
@@ -174,22 +173,14 @@ Very short testing defs for a variety of purposes
 
 **Testing_script_09**
 
-:    num_121()  # 2D array to xy_val
+:    num_121()  # 2D array to xy_val  
+:    num_122()  # Do an equation expansion  
+:    num_123()  # Reshape and transpose columns using einsum  
+:    num_124()  # Running count of values in a 1D array  
+:    num_125()  # combine_dicts(ds)  
+:    num_126()  # prime number calculator  
+:    num_127()  #  
+:    num_128()  #  
+:    num_129()  #  
+:    num_130()  #  
 
-:    num_122()  # Do an equation expansion
-
-:    num_123()  # Reshape and transpose columns using einsum
-
-:    num_124()  # Running count of values in a 1D array
-
-:    num_125()  # combine_dicts(ds)
-
-:    num_126()  # prime number calculator
-
-:    num_127()  #
-
-:    num_128()  #
-
-:    num_129()  #
-
-:    num_130()  #

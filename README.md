@@ -43,7 +43,7 @@ Very short testing defs for a variety of purposes
 :    py_03()   formatting output with textwrap  
 :  
 
-...... **matplotlib** ......  
+:...... **matplotlib** ......  
 :    mpl_01()  Plotting and interpolating  
 :    mpl_02()  Construct rectangular geometries  
   
@@ -117,7 +117,6 @@ Very short testing defs for a variety of purposes
 :    num_77()  # 2.7 indent function  
 :    num_78()  # logical_or, condition checking  
 :    num_79()  # bad floating point comparisons  
-
 :    num_80()  # using r_ and c_ for rapid indexing and array construction  
 :    num_81()  # sorting arrays by column, revisited  
 :    num_82()  # line indentation options  
@@ -143,7 +142,7 @@ Very short testing defs for a variety of purposes
 :    num_97()  # running 2d maximum  
 :    num_98()  # Decimal minute to decimal degree convertor  
 :    num_99()  # Decimal, minutes, seconds to decimal degree convertor  
-:    num_100()  # degrees, min, sec in separate fields to decimal degrees
+:    num_100() # degrees, min, sec in separate fields to decimal degrees
 
 **Testing_script_07**
 
@@ -165,9 +164,23 @@ Very short testing defs for a variety of purposes
 :    num_112()  # os.path information  
 :    num_113()  # sequential counts for attributes  
 :    num_114()  # heat map by sampling and bucketing  
-:    num_115()  #  
+:    num_115()  # Angle between 2 vectors using 3d points vectors 
 :    num_116()  # form array patterns  
 :    num_117()  # Using a searchcursor in the field calculator  
 :    num_118()  # using random.mrand.RandomState  
 :    num_119()  # Equation of a plane through 3 points  
 :    num_120()  #  
+
+
+**Testing_script_09**
+
+:    num_121()  # 2D array to xy_val
+:    num_122()  # Do an equation expansion
+:    num_123()  # Reshape and transpose columns using einsum
+:    num_124()  # Running count of values in a 1D array
+:    num_125()  # combine_dicts(ds)
+:    num_126()  # prime number calculator
+:    num_127()  #
+:    num_128()  #
+:    num_129()  #
+:    num_130()  #
